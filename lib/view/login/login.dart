@@ -20,7 +20,7 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
-  
+
   TextEditingController phoneController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   bool isObscureText = true;
@@ -83,24 +83,24 @@ class _LoginViewState extends State<LoginView> {
                     contentPadding: EdgeInsets.all(AppSizeSp.s14),
                     border: OutlineInputBorder(
                       borderSide: const BorderSide(
-                        color: Colors.grey, // Grey color for the border
-                        width: 1.0, // Border width
+                        color: Colors.grey, 
+                        width: 1,
                       ),
                       borderRadius: BorderRadius.circular(AppSizeR.s8),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors
-                            .grey, // Grey color for the border when the field is enabled
-                        width: 1, // Border width
+                            .grey,
+                        width: 1, 
                       ),
                       borderRadius: BorderRadius.circular(AppSizeR.s8),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors
-                            .grey, // Grey color for the border when the field is focused
-                        width: 1.0, // Border width
+                            .grey, 
+                        width: 1,
                       ),
                       borderRadius: BorderRadius.circular(AppSizeR.s8),
                     ),
@@ -118,15 +118,6 @@ class _LoginViewState extends State<LoginView> {
                   },
                   onTap: () {},
                   keyboardType: TextInputType.phone,
-                  // validator: (v) {
-                  //   if (v == null || v == '') {
-                  //     return AppStrings().phoneNumberCantBeEmpty;
-                  //   } else if (v.length > 10 || v.length < 10) {
-                  //     return AppStrings().phoneNumberShouldBe10Digits;
-                  //   } else {
-                  //     return null;
-                  //   }
-                  // },
                 ),
                 SizedBox(
                   height: AppSizeH.s31,
