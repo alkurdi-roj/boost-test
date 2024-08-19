@@ -60,7 +60,7 @@ class ProductItemWidget extends StatelessWidget {
                       child: Icon(Icons.error, color: Colors.red),
                     ),
                   ),
-                  imageUrl: '${product.images.first}', 
+                  imageUrl: product.images.first, 
                 ),
               ),
             ),
