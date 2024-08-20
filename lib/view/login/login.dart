@@ -117,7 +117,7 @@ class _LoginViewState extends State<LoginView> {
                     setState(() {});
                   },
                   onTap: () {},
-                  keyboardType: TextInputType.phone,
+                  // keyboardType: TextInputType.phone,
                 ),
                 SizedBox(
                   height: AppSizeH.s31,
